@@ -49,3 +49,14 @@ HEAD - файл со ссылкой на последний актуальный
 git log дает полезную инфу обо всех коммитах.  
 git log --oneline даёт ту же инфу в компактном виде, удобно и полезно.
 
+## статусы файла в git
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged/tracked;
+  staged -- "git commit -m " --> tracked;
+  tracked -- "edited" --> modified;
+  staged -- "edited" --> modified;
+  modified -- "git add" --> staged;
+```
+
+
