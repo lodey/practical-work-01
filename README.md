@@ -13,12 +13,28 @@ touch README.md
 ## добавить файл в git
 git add --all
 
-##
+## проверить, что git теперь наблюдает за этим файлом
+git status
 
-##
+## внести контент в файл
 
-##
+## закоммитить сделанную на данный момент работу
+git commit -m 'Добавлен README.md'
 
-##
+## создать remote репозиторий на GitHub
+git@github.com:lodey/practical-work-01.git
 
-##
+## связать remote репозиторий с local
+git remote add origin git@github.com:lodey/practical-work-01.git
+
+## проверить связь
+git remote -v
+
+## сделать первый push
+git push -u origin main
+
+## финальный commit
+git commit -m 'Завершен README.md'
+
+## .. и финальный push
+git push
